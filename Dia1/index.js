@@ -14,7 +14,7 @@ export function menuPrincipal(){
         " 3. Coordinador\n"+
         "=======================================\n"
     )
-}
+}g
 
 // Menu estudiante 
 export function menuEstudiante(){
