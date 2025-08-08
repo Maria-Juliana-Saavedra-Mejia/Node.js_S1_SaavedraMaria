@@ -7,7 +7,7 @@ class Libro{
     setAutor(autor){
         this._autor=autor
     }
-      eliminarAutor() {
+    eliminarAutor() {
     this._autor = null;
   }
 }
