@@ -11,6 +11,12 @@ class Autor{
             libro.setAutor(this)
         }
     }
+    eliminarLibro(libro) {
+    this.libros = this.libros.filter(l => l.isbn !== libro.isbn);
+    if (libro._autor === this) {
+      libro.eliminarAutor();
+    }
+  }
 }
 
 module.exports=Autor;
