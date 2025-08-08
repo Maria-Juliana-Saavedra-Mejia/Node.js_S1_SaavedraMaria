@@ -29,6 +29,9 @@ const Persona = require ('./models/Persona');
 const CuentaBancaria = require ('./models/CuentaBancaria');
 const Perro = require ('./models/Perro')
 const Gato = require ('./models/Gato')
+const Pajaro = require ('./models/Pajaro')
+const Pedido = require('./models/Pedido');
+const LineItem = require('./models/Lineltem');
 
 
 // ejemplo Abstraccion 
@@ -52,5 +55,23 @@ animal1.hablar();
 // ejemplo Herencia
 const animal2 = new Gato("Mechas");
 animal2.hablar();
+
+
+
+// ejemplo Comando SUPER
+const animal3 = new Pajaro("Piolin", "Canario");
+animal3.hablar();
+
+
+// ejemplo Asociación
+const pedido1 = new Pedido('P-001');
+pedido1.addItem(new LineItem('Manzanas',3,1.2));
+pedido1.addItem(new LineItem('Peras',2,1.5));
+
+console.log('Total Pedido:',pedido1.total());
+
+//Un LineItem NO sabe de su pedido
+const item= pedido1.items[0];
+console.log('Item conoce el ID del pedido?:','id' in item);
 
 
