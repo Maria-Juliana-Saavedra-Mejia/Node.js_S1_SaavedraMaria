@@ -105,5 +105,5 @@ autor1.eliminarLibro(libro1);
 console.log('\nDespués de eliminar libro1:');
 console.log('Autor del libro1:', libro1); // null
 console.log('Libros del autor1:', autor1); // solo libro2
-console.log('Autor del libro1:', libro2);
+console.log('Autor del libro2:', libro2);
 

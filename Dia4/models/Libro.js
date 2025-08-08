@@ -7,7 +7,7 @@ class Libro{
     setAutor(autor){
         this._autor=autor
     }
-    eliminarAutor() {
+    eliminarAutor() { // Aquí, el libro borra la referencia hacia su autor asignándole null.
     this._autor = null;
   }
 }
