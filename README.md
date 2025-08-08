@@ -28,4 +28,4 @@ Se encuentra la explicacion de como realizar CRUD en Node.js.
 Se encuentra la explicacion de Programación Orientada a Objetos (POO) en Node.js. 
 
 > [**Dia 4**]
-. 
+Se encuentra la explicacion de relaciones entre clases en Node.js. 
