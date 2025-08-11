@@ -9,6 +9,7 @@ En este repositorio se encuentran todos los trabajos y anotaciones de la estudia
 | DIA 2 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia2|
 | DIA 3 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia3|
 | DIA 4 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia4|
+| DIA 5 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia5|
 
 
 ## Instalación 
@@ -29,3 +30,6 @@ Se encuentra la explicacion de Programación Orientada a Objetos (POO) en Node.j
 
 > [**Dia 4**]
 Se encuentra la explicacion de relaciones entre clases en Node.js. 
+
+> [**Dia 5**]
+Se encuentra la explicacion de principios S.O.L.I.D clases en Node.js. 
