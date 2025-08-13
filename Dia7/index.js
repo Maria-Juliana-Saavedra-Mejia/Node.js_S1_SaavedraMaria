@@ -41,6 +41,8 @@ function handleMenu(option) {
       break;
     case "5":
       booleanito = false;
+      console.log("Saliendo...");
+      break;
     default:
       console.log("Opción inválida.");
   }
