@@ -11,7 +11,7 @@ En este repositorio se encuentran todos los trabajos y anotaciones de la estudia
 | DIA 4 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia4|
 | DIA 5 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia5|
 | DIA 6 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia6|
-
+| DIA 7 |https://github.com/Maria-Juliana-Saavedra-Mejia/Node.js_S1_SaavedraMaria/tree/master/Dia7|
 
 ## Instalación 
 
@@ -37,3 +37,6 @@ Se encuentra la explicacion de principios S.O.L.I.D en Node.js.
 
 > [**Dia 6**]
 Se encuentra la explicacion de Patrones de Diseño en Node.js. 
+
+> [**Dia 7**]
+Se encuentra la explicacion de Introducción a Persistencia de Datos en Node.js. 
