@@ -69,3 +69,39 @@ function listItems(){
     let data = loadData();
     console.table(data)
 }
+
+function updateItem(){
+    const data = loadData();
+    console.table(data);
+    
+    const cambio = parseInt(prompt("Digite el id del nombre a editar: "));
+    const dataEncontrada = data.find(item => item.id === cambio);
+    if (!dataEncontrada) {
+        console.log("No se encontró un elemento con ese ID.");
+        return;
+    }
+    console.log(dataEncontrada);
+    const nuevoNombre = prompt(`Digite el nuevo nombre (actual: ${dataEncontrada.nombre}): `);
+    dataEncontrada.nombre = nuevoNombre;
+
+    saveData(data); 
+    console.log("Nombre actualizado correctamente.");
+}
+
+function deleteItem(){
+    const data = loadData();
+    console.table(data);
+    
+    const cambio = parseInt(prompt("Digite el id del nombre a eliminar: "));
+    const dataEncontrada = data.find(item => item.id === cambio);
+
+    if (!dataEncontrada) {
+        console.log("No se encontró un elemento con ese ID.");
+        return;
+    }
+    console.log(dataEncontrada);
+    const dataEiminada = data.filter(item => item.id !== cambio);
+
+    saveData(dataEiminada); 
+    console.log(" Elemento eliminado correctamente.");
+}
