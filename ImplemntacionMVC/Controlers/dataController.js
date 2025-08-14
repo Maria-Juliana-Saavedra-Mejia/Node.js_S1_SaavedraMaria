@@ -1,5 +1,5 @@
 const { loadData, saveData } = require('../Models/dataModel');
-const { inputNombre, inputId } = require('../Views/menus');
+const { inputNombre, inputId, agregadoCorrectamente, noEncontrado, idEditar, EditarNombre, ActulizacionCorrecta, Eliminado, idEliminar } = require('../Views/menus');
 
 function createItem() {
     const nombre = inputNombre();
@@ -7,7 +7,7 @@ function createItem() {
     const data = loadData();
     data.push({ id, nombre });
     saveData(data);
-    console.log(" Elemento agregado correctamente.");
+    agregadoCorrectamente();
 }
 
 function listItems() {
@@ -18,36 +18,31 @@ function listItems() {
 function updateItem() {
     const data = loadData();
     console.table(data);
-
-    const id = inputId("Digite el id del nombre a editar: ");
-    const item = data.find(e => e.id === id);
-
-    if (!item) {
-        console.log(" No se encontró un elemento con ese ID.");
+    const cambio= idEditar();
+    const dataEncontrada = data.find(item => item.id === cambio);
+    if (!dataEncontrada) {
+        noEncontrado();
         return;
     }
-
-    const nuevoNombre = inputNombre(`Nuevo nombre (actual: ${item.nombre}): `);
-    item.nombre = nuevoNombre;
-    saveData(data);
-    console.log(" Elemento actualizado correctamente.");
+    const nuevoNombre = EditarNombre(); 
+    dataEncontrada.nombre = nuevoNombre;
+    saveData(data); 
+    ActulizacionCorrecta()
 }
 
 function deleteItem() {
     const data = loadData();
     console.table(data);
-
-    const id = inputId("Digite el id del nombre a eliminar: ");
+    const id =  idEliminar();
     const existe = data.some(e => e.id === id);
 
     if (!existe) {
-        console.log(" No se encontró un elemento con ese ID.");
+        noEncontrado();
         return;
     }
-
     const nuevaData = data.filter(e => e.id !== id);
     saveData(nuevaData);
-    console.log(" Elemento eliminado correctamente.");
+    Eliminado();
 }
 
 module.exports = { createItem, listItems, updateItem, deleteItem };

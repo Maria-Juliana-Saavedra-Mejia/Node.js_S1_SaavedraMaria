@@ -5,7 +5,6 @@ let booleanito = true;
 
 while (booleanito) {
     const opcion = showMenu();
-
     switch (opcion) {
         case "1":
             createItem();

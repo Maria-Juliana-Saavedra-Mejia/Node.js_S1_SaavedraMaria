@@ -17,5 +17,39 @@ function inputNombre(mensaje = "Ingresa un nombre: ") {
 function inputId(mensaje) {
     return parseInt(prompt(mensaje));
 }
-
-module.exports = { showMenu, inputNombre, inputId };
+function agregadoCorrectamente(){
+    console.log(" Elemento agregado correctamente.");
+}
+function noEncontrado(){
+    console.log(" No se encontró un elemento con ese ID.");
+} 
+function idEditar(){
+    const cambio = parseInt(prompt("Digite el id del nombre a editar: "));
+    return cambio
+}
+function EditarNombre(){
+    const nuevoNombre = inputNombre(`Digite el nuevo nombre: `); 
+    return nuevoNombre
+}
+function ActulizacionCorrecta(){
+    console.log("Nombre actualizado correctamente.");
+}
+function Eliminado(){
+    console.log(" Elemento eliminado correctamente.");
+}
+function idEliminar(){
+    const id = inputId("Digite el id del nombre a eliminar: ");
+    return id
+}
+module.exports = { 
+    showMenu, 
+    inputNombre, 
+    inputId,
+    agregadoCorrectamente, 
+    noEncontrado, 
+    idEditar,
+    EditarNombre,
+    ActulizacionCorrecta,
+    Eliminado,
+    idEliminar,
+ };
