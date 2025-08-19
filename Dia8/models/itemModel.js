@@ -42,7 +42,7 @@ class ItemModel{
         // (||) significa or
     }
     actualizar(id,{nombre,descripcion}){
-        const item = this.buscarPorId(id);
+        const item = this._items.find(i => i.id === parseInt(id));   
         if(!item) return null;
         if(typeof nombre==="string") item.nombre = nombre.trim(); // verifica que el tipo de texto 
         // de nombre sea string y luego realiza el cambio.
