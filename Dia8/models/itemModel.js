@@ -8,7 +8,7 @@ class Item{
         this.nombre=nombre;
         this.descripcion=descripcion
         this.creadoEn= new Date();
-        this. actualizadoEn=new Date();
+        this.actualizadoEn=new Date();
     }
 
 }
