@@ -44,7 +44,8 @@ class ItemModel{
     actualizar(id,{nombre,descripcion}){
         const item = this.buscarPorId(id);
         if(!item) return null;
-        if(typeof nombre==="string") item.nombre = nombre.trim(); // verifica que el tipo de texto de nombre sea string y luego realiza el cambio.
+        if(typeof nombre==="string") item.nombre = nombre.trim(); // verifica que el tipo de texto 
+        // de nombre sea string y luego realiza el cambio.
         if(typeof descripcion==="string") item.descripcion = descripcion.trim();
         item.actualizadoEn = new Date();
         return item;
@@ -57,4 +58,4 @@ class ItemModel{
         return true;
     }
 }
-module.exports={ItemModel}; // exporta los modulos
+module.exports={ItemModel}; // exporta los modulos{}
