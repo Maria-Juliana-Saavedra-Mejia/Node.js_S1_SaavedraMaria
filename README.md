@@ -40,3 +40,6 @@ Se encuentra la explicacion de Patrones de Diseño en Node.js.
 
 > [**Dia 7**]
 Se encuentra la explicacion de Introducción a Persistencia de Datos en Node.js. 
+
+> [**Dia 8**]
+Se encuentra la explicacion de Modelo Vista Controlador en Node.js. 
