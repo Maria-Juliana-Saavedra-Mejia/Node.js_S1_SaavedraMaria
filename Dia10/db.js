@@ -9,6 +9,8 @@ const dbName = process.env.DB_NAME;
 let client;
 let db;
 
+
+
 async function connect() {
     if (db) return db;// Retorna la variable si tiene alguna conexión
     client=new MongoClient(uri); // Importa MongoClient a client
